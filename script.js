@@ -39,3 +39,16 @@ function eraseText() {
 
 window.onload = typeWriter;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
