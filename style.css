@@ -163,7 +163,7 @@ section {
     margin: 0 auto;
     padding: 0 20px;
 }
-
+/* 
 .main-container .image {
     width: min(500px, 55vw);
     aspect-ratio: 1 / 1;
@@ -171,6 +171,50 @@ section {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 50px #077b32;
+} */
+
+/* Main Image Setup */
+.main-container .image{
+    position:relative;
+
+    width:min(500px,55vw);
+    aspect-ratio:1;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    box-shadow:0 0 50px #077b32;
+}
+
+/* Floating Animation */
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+.image{
+
+animation:float 4s ease-in-out infinite;
+
 }
 
 .main-container .image img {
@@ -225,11 +269,10 @@ section {
     text-shadow: 0 0 10px #077b32;
 }
 
-.content p {
-    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
-    margin: 10px 0;
+.content p{
+    font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+    line-height: 1.7;
 }
-
 .social-links i {
     display: inline-flex;
     justify-content: center;
